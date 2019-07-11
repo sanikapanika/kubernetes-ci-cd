@@ -9,7 +9,8 @@ spec:
     - port: 80
       targetPort: 80
   selector:
-    app: hello-kenzan
+    matchLabels:
+      app: hello-kenzan
   type: NodePort
 
 ---
